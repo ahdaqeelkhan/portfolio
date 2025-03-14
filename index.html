@@ -3,43 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Software Engineering Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
-    
-    <!-- Navigation -->
-    <nav class="p-5 bg-gray-800 text-white flex justify-between">
-        <h1 class="text-2xl font-bold">AK</h1>
-        <button id="theme-toggle" class="px-4 py-2 bg-blue-500 rounded">Toggle Theme</button>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="text-center p-20">
-        <h2 class="text-4xl font-bold">Hi, I'm <span class="text-blue-500">Your Name</span></h2>
-        <p class="text-lg mt-4">A passionate Software Engineer building amazing websites.</p>
-        <a href="resume.pdf" download class="mt-4 inline-block px-6 py-2 bg-blue-500 text-white rounded shadow">Download Resume</a>
-    </section>
-    
-    <!-- Skills Section -->
-    <section class="p-10">
-        <h2 class="text-3xl font-bold text-center">Skills</h2>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 text-center">
-            <div class="p-4 bg-gray-200 dark:bg-gray-700 rounded">HTML</div>
-            <div class="p-4 bg-gray-200 dark:bg-gray-700 rounded">CSS & Tailwind</div>
-            <div class="p-4 bg-gray-200 dark:bg-gray-700 rounded">JavaScript</div>
-            <div class="p-4 bg-gray-200 dark:bg-gray-700 rounded">Python</div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p>Software Engineering Student</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="primary-btn">Contact Me</a>
+                <a href="#projects" class="secondary-btn">View My Work</a>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="p-10 text-center">
-        <h2 class="text-3xl font-bold">Contact</h2>
-        <p class="mt-4">Feel free to reach out!</p>
-        <a href="mailto:your.email@example.com" class="mt-4 inline-block px-6 py-2 bg-green-500 text-white rounded shadow">Email Me</a>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a passionate Software Engineering undergraduate seeking internship opportunities. With a strong foundation in programming and problem-solving, I am eager to apply my skills in a professional setting.</p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <p>Bachelor of Software Engineering</p>
+                    <p>Your University Name</p>
+                    <p>Expected Graduation: 2026</p>
+                </div>
+            </div>
+        </div>
     </section>
-    
-    <script src="script.js"></script>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Web Technologies</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of your first project. What technologies you used and what problems you solved.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of your second project. What technologies you used and what problems you solved.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
