@@ -114,6 +114,7 @@ h1 {
 }
 
 .lead { font-size: 1.5rem; max-width: 650px; margin-bottom: 50px; color: var(--ink); }
+.hero-cta { display: flex; gap: 20px; }
 
 .hero-meta {
     font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted);
@@ -265,9 +266,56 @@ footer { padding: 80px 0; font-family: var(--font-mono); font-size: 0.7rem; colo
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--ink); }
 
+/* --- Mobile Responsiveness --- */
 @media (max-width: 992px) {
     .hero, .manifesto-grid, .project-row, .contact-grid, .credentials-grid { grid-template-columns: 1fr; gap: 50px; }
     .hero-meta { border-left: none; border-top: 1px solid var(--border); padding: 40px 0 0; }
     .grid-line-v { display: none; }
     .timeline-item { grid-template-columns: 1fr; gap: 10px; }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 0;
+        gap: 30px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .footer-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
+    }
+
+    .footer-socials {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-cta {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
 }
