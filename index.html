@@ -24,13 +24,29 @@
 
     <header class="container">
         <div class="logo-group">
-            <div class="logo">AQ.</div>
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">AQ.</a>
             <div class="status-indicator" id="local-time">[ LKA 00:00:00 ]</div>
         </div>
-        <nav>
-            <div class="nav-item"><a href="projects.html">Projects</a></div>
-            <div class="nav-item"><a href="#methodology">Methodology</a></div>
-            <div class="nav-item"><a href="#contact">Contact</a></div>
+        
+        <!-- Technical Menu Toggle -->
+        <button class="nav-toggle magnetic" aria-label="Toggle Menu">
+            <span class="toggle-label">[ MENU ]</span>
+        </button>
+
+        <nav class="nav-overlay">
+            <div class="nav-container">
+                <div class="nav-item"><a href="projects.html" class="serif-title">Archives.</a></div>
+                <div class="nav-item"><a href="#methodology" class="serif-title">Methodology.</a></div>
+                <div class="nav-item"><a href="#contact" class="serif-title">Inquiry.</a></div>
+                
+                <div class="nav-footer">
+                    <div class="status-indicator">[ 7.87° N, 80.77° E ]</div>
+                    <div class="social-links-minimal">
+                        <a href="https://www.linkedin.com/in/ahdaqeelkhan/" target="_blank">LI</a>
+                        <a href="https://github.com/" target="_blank">GH</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -179,7 +195,7 @@
             <div class="footer-wrap">
                 <div class="footer-socials">
                     <a href="https://www.linkedin.com/in/ahdaqeelkhan/" target="_blank" class="nav-item magnetic" style="color: var(--ink); text-decoration: none; font-family: var(--font-mono); font-size: 0.7rem; margin-right: 20px;">LINKEDIN</a>
-                    <a href="https://github.com/ahdaqeelkhan/" target="_blank" class="nav-item magnetic" style="color: var(--ink); text-decoration: none; font-family: var(--font-mono); font-size: 0.7rem;">GITHUB</a>
+                    <a href="https://github.com/" target="_blank" class="nav-item magnetic" style="color: var(--ink); text-decoration: none; font-family: var(--font-mono); font-size: 0.7rem;">GITHUB</a>
                 </div>
                 <span>AQ. — 2026 / SOFTWARE ENGINEERING / BUILT FOR GLOBAL SCALE</span>
                 <span>[ 7.87° N, 80.77° E ]</span>
@@ -188,5 +204,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-</body>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1347be98e98fd22',t:'MTc4MjczMTQxOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
